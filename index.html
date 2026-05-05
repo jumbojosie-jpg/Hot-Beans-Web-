@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar js-mushroom w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64 js-bonetitle"><b>HotBeansWeb</b></h3>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#About Us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+            <a href="#Trainees" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trainees</a>
+            <a href="#Courses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a>
+            <a href="#Job Specifications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Job
+                Specification</a>
+            <a href="#Application" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Application</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large js-mushroom w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button js-mushroom w3-margin-right" onclick="w3_open()">☰</a>
+        <span>HotBeansWeb</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="js-teal" style="margin-top:80px" id="About us">
+            <h1 class="js-bonemegatitle"><b>HotBeansWeb</b></h1>
+
+
+        </div>
+
+        <!-- Photo grid (modal) -->
+        <div class="js-teal">
+            <img src="Images/main page banner.jpg" alt="John" style="width:100%">
+            <div class="w3-container">
+
+                <!-- Modal for full size images on click-->
+                <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <img id="img01" class="w3-image">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="js-bonetext" id="About Us" style="margin-top:75px">
+                    <h1 class="w3-xxxlarge js-boneheading "><b>About Us.</b></h1>
+                    <hr style="width:50px;border:5px solid #f0eefc" class="w3-round">
+                    <p>Delivering Digital Excellence Since 2008</p>
+                    <p>Founded in 2008 by Jasmine Scott, Hot Beans Web has grown from a small start-up into a successful
+                        digital
+                        agency with 36 employees. We now manage six major contracts with leading supermarkets and
+                        clothing
+                        brands, delivering reliable and high-performing digital platforms.
+                        We provide tailored digital solutions that help businesses strengthen their online presence and
+                        achieve
+                        measurable growth. Our core services include:
+                        Web Design & Development – Responsive, user-focused websites.
+                        Search Engine Optimisation (SEO) – Increasing visibility and driving traffic.
+                        Branding & Digital Identity – Creating strong, memorable brands.
+                        E-Commerce & Shopping Trolley Systems – Secure online stores with integrated shopping
+                        functionality.
+                        Ongoing Support & Digital Strategy – Maintenance, optimisation, and expert guidance.
+                        At Hot Beans Web, we combine creativity, technical expertise, and innovation to help businesses
+                        succeed
+                        in today’s fast-moving digital world.
+
+                    </p>
+                </div>
+
+                <!-- Designers -->
+                <div class="w3-container" id="Trainees" style="margin-top:75px">
+                    <h1 class="w3-xxxlarge js-bonetitle"><b>Trainees.</b></h1>
+                    <hr style="width:50px;border:5px solid #f0eefc" class="w3-round">
+                    <div class="js-bonetext">
+                        <p><b>Meet the team</b>:</p>
+                    </div>
+
+                </div>
+
+                <!-- The Team -->
+                <div class="w3-row-padding ">
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <div class="js-teal">
+                          <img src="Images/Trainees page Jonathon Price.jpg" alt="John" style="width:100%" onclick="onClick(this)">
+                            <div class="js-boneheading">
+                                <p>Jonathon Price</p>
+                                <div class="js-bonetext">
+                                    <p class="w3-opacity"> Trainee Web Developer</p>
+                                    <p>Jonathon Price is currently training as a trainee web developer at Hot Beans Web. He works under the supervision of experienced developers while developing his skills in HTML, CSS, and basic JavaScript. As part of his trainee role, Jonathon assists with website updates, tests page layouts, and supports ongoing projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <div class="js-teal ">
+                            <img src="Images/Trainees page Emma Marchbanks.jpg" alt="Jane" style="width:100%">
+                            <div class="js-boneheading">
+                                <p>Emma Marchbanks</p>
+                                <div class="js-bonetext">
+                                    <p class="w3-opacity">Trainee Web Developer</p>
+                                    <p>Emma Marchbanks is a trainee web developer at Hot Beans Web who is gaining hands on experience in website design and development. She is learning how to create user friendly and responsive websites on real projects. Emma’s trainee role allows her to build technical skills and prepare for a future career.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <div class="js-teal">
+                            <img src="Images/Trainees page Olivia Nueton.jpg" alt="Mike" style="width:100%">
+                            <div class="js-boneheading">
+                                <p>Olivia Newton</p>
+                                <div class="js-bonetext">
+                                    <p class="w3-opacity">
+                                        Head of Recruitment
+                                    </p>
+                                    <p>Olivia leads the recruitment team and the day-to-day operations of the HR
+                                        department. She works closely with the legal and finance teams to ensure smooth
+                                        internal processes and effective workforce management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Packages / Pricing Tables -->
+                <div class="w3-container" id="Courses" style="margin-top:75px">
+                    <h1 class="w3-xxxlarge js-bonetitle"><b>Courses.</b></h1>
+                    <hr style="width:50px;border:5px solid #f0eefc" class="w3-round">
+
+                </div>
+
+                <div class="w3-row-padding">
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <ul class="w3-ul js-teal w3-center">
+
+                            <img src="Images/W3Schools logo copy.jpg" alt="w3schools" style="width:100%">
+                            <div class="js-bonetext">
+                                <p class="w3-opacity">W3Schools – Online course for learning Web Professionals</p>
+                                <p>
+                                    <li class="w3-padding-16">
+                                        <h3>Web Development Course</h3>
+                                    </li>
+                                   This course teaches the basics of web development, including HTML, CSS, and introductory JavaScript. It is suitable for beginners who want to learn how to build and style websites from scratch.
+                                </p>
+                                <li class="w3-padding-16">
+                                    <h2>Why You'll Benefit</h2>
+
+                                </li>
+                                <li class="w3-padding-16">• Learn and refresh key web development skills</li>
+                                <li class="w3-padding-16">• Stay updated with modern coding standards</li>
+                                <li class="w3-padding-16">• Boost productivity and efficiency in building websites
+                                </li>
+                                <li class="w3-padding-16">• Gain certifications to showcase your expertise</li>
+                            </div>
+                            <div class="js-blacktext">
+                                <li class="js-teal w3-padding-24">
+                                    <a href="https://www.w3schools.com/html/" target="_blank" class="w3-button js-bone w3-padding-large w3-hover-black">
+									  Explore
+</a>
+
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <ul class="w3-ul js-teal w3-center">
+                            <img src="Images/Udemy logo copy.jpg" alt="w3schools" style="width:100%">
+                            <div class="js-bonetext">
+
+                                <p class="w3-opacity">Udemy – Professional Online Courses for Web Development</p>
+                                <p>
+                                    <li class="w3-padding-16">
+                                        <h3>Web Design and Development Course</h3>
+                                    </li>
+                                   This course focuses on creating responsive and professional websites using modern design techniques. It is ideal for learners with some basic knowledge who want to improve their practical skills and build a portfolio.
+                                </p>
+                                <li class="w3-padding-16">
+                                    <h2>Why You'll Benefit</h2>
+
+                                </li>
+                                <li class="w3-padding-16">• Learn web development skills from industry professionals
+                                </li>
+                                <li class="w3-padding-16">• Access a wide range of courses covering modern web
+                                    technologies
+                                </li>
+                                <li class="w3-padding-16">• Develop practical skills that can be applied to projects at
+                                    Hot Beans Web
+                                </li>
+
+                            </div>
+                            <div class="js-blacktext">
+                                <li class="js-teal w3-padding-24">
+                                    <button class="w3-button js-bone w3-padding-large w3-hover-black">Explore</button>
+
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="w3-col l4 s12 w3-margin-bottom">
+                        <ul class="w3-ul js-teal w3-center">
+                            <img src="Images/Khan logo copy.jpg" alt="w3schools" style="width:100%">
+                            <div class="js-bonetext">
+                                <p class="w3-opacity">Khan Academy – Free Online Learning for Web Development</p>
+                                <p>
+                                    <li class="w3-padding-16">
+                                        <h3>Computer Science Course</h3>
+                                    </li>
+                                    This course provides a foundation in programming and problem solving skills that support web development. It is suitable for beginners who want to understand how coding works before progressing to more advanced web development topics.
+                                </p>
+                                <li class="w3-padding-16">
+                                    <h2>Why You'll Benefit</h2>
+
+                                </li>
+                                <li class="w3-padding-16">• Learn the fundamentals of web development through
+                                    interactive
+                                    lessons</li>
+                                <li class="w3-padding-16">• Streng then your understanding of HTML, CSS, and JavaScript
+                                </li>
+                                <li class="w3-padding-16">• Practice coding with step-by-step exercises and projects
+                                </li>
+
+
+
+                            </div>
+                            <div class="js-blacktext">
+                                <li class="js-teal w3-padding-24">
+                                    <button class="w3-button js-bone w3-padding-large w3-hover-black">Explore</button>
+
+                                </li>
+                            </div>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container" id="Job Specifications" style="margin-top:75px">
+                <h1 class="w3-xxxlarge js-bonetitle"><b>Job Specifications.</b></h1>
+                <hr style="width:50px;border:5px solid #f0eefc" class="w3-round">
+
+            </div>
+
+            <div class="w3-row-padding">
+
+                <div class="w3-col l6 s12 w3-margin-bottom">
+                    <ul class="w3-ul js-teal w3-center">
+                        <div class="js-greenheading">
+                            <li class="js-bone w3-large w3-padding-32">Website Designer</li>
+                        </div>
+
+                        <div class="js-bonetext">
+                            <li class="w3-padding-16">
+                                <h3>Role Summary</h3>
+                                At Hot Beans Web, our Website Designers create visually engaging, user-friendly
+                                websites
+                                that bring client brands to life through creative and effective design.
+
+							<li class="w3-padding-16">
+								 <h4>Qualifications Needed</h4>
+
+							<li class="w3-padding-16">• Degree in computer science or web design </li>
+
+                            <li class="w3-padding-16">
+                                <h3>Key Responsibilities</h3>
+                            <li class="w3-padding-16">• Design website layouts, colours, and typography</li>
+                            <li class="w3-padding-16">• Websites are easy to navigate and engaging</li>
+                            <li class="w3-padding-16">• Update and optimise website performance</li>
+                            <li class="w3-padding-16">• Help team with marketing and design materials</li>
+                            <li class="w3-padding-16">
+                                <h2>£27,000</h2>
+                                <span class="w3-opacity">per year</span>
+                            </li>
+                            <div class="js-blacktext">
+                                <li class="js-teal w3-padding-24">
+                                    <button class="w3-button js-bone w3-padding-large w3-hover-black">Sign
+                                        up</button>
+
+                                </li>
+                            </div>
+                    </ul>
+                </div>
+
+                <div class="w3-col l6 s12 w3-margin-bottom">
+                    <ul class="w3-ul js-teal w3-center">
+                        <div class="js-bonetext">
+                            <li class="js-green w3-large w3-padding-32">Full Stack Java Developer</li>
+                        </div>
+
+
+                        <div class="js-bonetext">
+                            <li class="w3-padding-16">
+                                <h3>Role Summary</h3>
+                                At Hot Beans Web, our Full Stack Java Developers create and maintain robust backend
+                                systems
+                                and web applications. You will use Java, Spring Boot, and microservices.
+
+							<li class="w3-padding-16">
+                                <h4>Qualifications Needed</h4>
+
+							<li class="w3-padding-16">• Degree in Core Java, Spring Boot, SQL, and front-end technologies </li>
+
+                            <li class="w3-padding-16">
+                                <h3>Key Responsibilities</h3>
+                            <li class="w3-padding-16">• Develop backend services and microservices</li>
+                            <li class="w3-padding-16">• Construct and maintain RESTful APIs</li>
+                            <li class="w3-padding-16">• Integrate with databases and third-party APIs</li>
+                            <li class="w3-padding-16">• Write unit and integration tests</li>
+                            <li class="w3-padding-16">
+                                <h2>£30,000–£40,000</h2>
+                                <span class="w3-opacity">per year</span>
+                            </li>
+
+
+                            <div class="js-blacktext">
+                                <li class="js-teal w3-padding-24">
+                                    <button class="w3-button js-bone w3-padding-large w3-hover-black">Sign up</button>
+
+                                </li>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="w3-container" id="Application" style="margin-top:75px">
+                <h1 class="w3-xxxlarge js-bonetitle"><b>Application.</b></h1>
+                <hr style="width:50px;border:5px solid #f0eefc" class="w3-round">
+                <div class="js-bonetext">
+                    <p>Looking for work? Fill out the form and learn more!</p>
+                </div>
+
+                <form id="applicationForm">
+
+                    <div class="js-bonetext">
+                        <div class="w3-section">
+                            <label>Forename</label>
+                            <input class="w3-input w3-border" type="text" name="Forename" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Surname</label>
+                            <input class="w3-input w3-border" type="text" name="Surname" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Email</label>
+                            <input class="w3-input w3-border" type="text" name="Email" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Telephone Number</label>
+                            <input class="w3-input w3-border" type="text" name="Telephone Number" required>
+                        </div>
+                        <div class="w3-section">
+                            <label>Application information</label>
+                            <input class="w3-input w3-border" type="text" name="Application information" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w3-button w3-block w3-padding-large js-bone w3-margin-bottom">Submit
+                        Application </button>
+                    <p id="successMessage" style="display:none; color: white; font-weight: bold;">
+					  Your application was submitted successfully!
+</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="js-teal w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+
+
+    <!--this is a link to any javascript that you add to your code-->
+    <script src="script.js"></script>
+</body>
+
+</html>

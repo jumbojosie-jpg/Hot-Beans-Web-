@@ -1,0 +1,95 @@
+@font-face {
+    font-family: bahnschrift;
+    /* set name */
+    src: url(BAHNSCHRIFT.TTF);
+    /* url of the font */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-half img:hover {
+    opacity: 1
+}
+
+.js-mushroom {
+    background-color: #b2b09b;
+}
+
+.js-teal {
+    background-color: #3a8892;
+}
+
+.js-green {
+    background-color: #9bc995;
+}
+
+.js-bone {
+    background-color: #f0eefc;
+}
+
+
+.js-mushroomtext {
+    color: #b2b09b;
+}
+
+.js-tealtext {
+    color: #3a8892;
+}
+
+.js-greentext {
+    color: #9bc995;
+}
+
+.js-bonetitle {
+    color: #f0eefc;
+    font-family: bahnschrift;
+    font-size: 32pt;
+}
+
+.js-bonemegatitle {
+    color: #f0eefc;
+    font-family: bahnschrift;
+    font-size: 40pt;
+}
+
+.js-boneheading {
+    color: #f0eefc;
+    font-family: bahnschrift;
+    font-size: 20pt;
+}
+
+.js-bonetext {
+    color: #f0eefc;
+    font-family: bahnschrift;
+    font-size: 11pt;
+}
+
+.js-blacktext {
+    color: #2e282a;
+    font-family: bahnschrift;
+    font-size: 11pt;
+}
+
+.js-greenheading {
+    color: #9bc995;
+    font-family: bahnschrift;
+    font-size: 30pt;
+}
